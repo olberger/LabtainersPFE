@@ -1,3 +1,0 @@
-password crack
-hash
-dictionary attack

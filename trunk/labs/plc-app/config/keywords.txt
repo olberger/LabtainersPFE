@@ -1,3 +1,0 @@
-plc
-firewall
-ics

@@ -1,1 +1,0 @@
-Explores parallel computation by compiling and running a set of MPI programs.

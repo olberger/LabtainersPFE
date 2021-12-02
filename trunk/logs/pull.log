@@ -1,0 +1,746 @@
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.base
+297061f60c36: Pulling fs layer
+e9ccef17b516: Pulling fs layer
+dbc33716854d: Pulling fs layer
+8fe36b178d25: Pulling fs layer
+686596545a94: Pulling fs layer
+2a1ec0dcc7d2: Pulling fs layer
+783e50103ffc: Pulling fs layer
+c947d8d0d841: Pulling fs layer
+079c5a491d92: Pulling fs layer
+3357f9e517ba: Pulling fs layer
+59e1fdacd7c3: Pulling fs layer
+94b49140ed6e: Pulling fs layer
+8de19312297d: Pulling fs layer
+1e9580c22968: Pulling fs layer
+f17efa04d6ff: Pulling fs layer
+be579e46efe7: Pulling fs layer
+1c60c5b04110: Pulling fs layer
+2a1ec0dcc7d2: Waiting
+783e50103ffc: Waiting
+c947d8d0d841: Waiting
+079c5a491d92: Waiting
+f17efa04d6ff: Waiting
+3357f9e517ba: Waiting
+be579e46efe7: Waiting
+59e1fdacd7c3: Waiting
+1c60c5b04110: Waiting
+94b49140ed6e: Waiting
+1e9580c22968: Waiting
+8de19312297d: Waiting
+4b08a013f339: Pulling fs layer
+821285fff202: Pulling fs layer
+4b08a013f339: Waiting
+686596545a94: Waiting
+e0fe2c2675a4: Pulling fs layer
+4565644af95b: Pulling fs layer
+821285fff202: Waiting
+a1c654d89ff3: Pulling fs layer
+e0fe2c2675a4: Waiting
+4565644af95b: Waiting
+12de31e54706: Pulling fs layer
+1d57e3ee688c: Pulling fs layer
+d55e150348ef: Pulling fs layer
+12de31e54706: Waiting
+1d57e3ee688c: Waiting
+1b315691f0f8: Pulling fs layer
+740d616ac234: Pulling fs layer
+1b315691f0f8: Waiting
+d55e150348ef: Waiting
+740d616ac234: Waiting
+dbc33716854d: Download complete
+e9ccef17b516: Verifying Checksum
+e9ccef17b516: Download complete
+8fe36b178d25: Verifying Checksum
+8fe36b178d25: Download complete
+686596545a94: Verifying Checksum
+686596545a94: Download complete
+2a1ec0dcc7d2: Verifying Checksum
+2a1ec0dcc7d2: Download complete
+783e50103ffc: Download complete
+c947d8d0d841: Verifying Checksum
+c947d8d0d841: Download complete
+079c5a491d92: Verifying Checksum
+079c5a491d92: Download complete
+59e1fdacd7c3: Verifying Checksum
+59e1fdacd7c3: Download complete
+3357f9e517ba: Download complete
+94b49140ed6e: Verifying Checksum
+94b49140ed6e: Download complete
+1e9580c22968: Verifying Checksum
+1e9580c22968: Download complete
+f17efa04d6ff: Verifying Checksum
+f17efa04d6ff: Download complete
+297061f60c36: Download complete
+1c60c5b04110: Verifying Checksum
+1c60c5b04110: Download complete
+be579e46efe7: Verifying Checksum
+be579e46efe7: Download complete
+297061f60c36: Pull complete
+4b08a013f339: Verifying Checksum
+4b08a013f339: Download complete
+821285fff202: Download complete
+e9ccef17b516: Pull complete
+e0fe2c2675a4: Verifying Checksum
+e0fe2c2675a4: Download complete
+4565644af95b: Verifying Checksum
+4565644af95b: Download complete
+a1c654d89ff3: Verifying Checksum
+a1c654d89ff3: Download complete
+dbc33716854d: Pull complete
+12de31e54706: Verifying Checksum
+12de31e54706: Download complete
+8fe36b178d25: Pull complete
+1d57e3ee688c: Verifying Checksum
+1d57e3ee688c: Download complete
+686596545a94: Pull complete
+d55e150348ef: Download complete
+1b315691f0f8: Download complete
+740d616ac234: Verifying Checksum
+740d616ac234: Download complete
+2a1ec0dcc7d2: Pull complete
+783e50103ffc: Pull complete
+c947d8d0d841: Pull complete
+079c5a491d92: Pull complete
+3357f9e517ba: Pull complete
+59e1fdacd7c3: Pull complete
+94b49140ed6e: Pull complete
+8de19312297d: Download complete
+8de19312297d: Pull complete
+1e9580c22968: Pull complete
+f17efa04d6ff: Pull complete
+be579e46efe7: Pull complete
+1c60c5b04110: Pull complete
+4b08a013f339: Pull complete
+821285fff202: Pull complete
+e0fe2c2675a4: Pull complete
+4565644af95b: Pull complete
+a1c654d89ff3: Pull complete
+12de31e54706: Pull complete
+1d57e3ee688c: Pull complete
+d55e150348ef: Pull complete
+1b315691f0f8: Pull complete
+740d616ac234: Pull complete
+Digest: sha256:12d2963b092e3f322d30e11050a19108b434d0a6e1a8d9b633014fd2f0662ab0
+Status: Downloaded newer image for labtainers/labtainer.base:latest
+docker.io/labtainers/labtainer.base:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.network
+297061f60c36: Already exists
+e9ccef17b516: Already exists
+dbc33716854d: Already exists
+8fe36b178d25: Already exists
+686596545a94: Already exists
+2a1ec0dcc7d2: Already exists
+783e50103ffc: Already exists
+c947d8d0d841: Already exists
+079c5a491d92: Already exists
+3357f9e517ba: Already exists
+59e1fdacd7c3: Already exists
+94b49140ed6e: Already exists
+8de19312297d: Already exists
+1e9580c22968: Already exists
+f17efa04d6ff: Already exists
+be579e46efe7: Already exists
+1c60c5b04110: Already exists
+4b08a013f339: Already exists
+821285fff202: Already exists
+e0fe2c2675a4: Already exists
+4565644af95b: Already exists
+a1c654d89ff3: Already exists
+12de31e54706: Already exists
+1d57e3ee688c: Already exists
+d55e150348ef: Already exists
+1b315691f0f8: Already exists
+740d616ac234: Already exists
+5ae6a0d95b1d: Pulling fs layer
+60c6aa336f7f: Pulling fs layer
+57a6bb3141f1: Pulling fs layer
+271a4db4b031: Pulling fs layer
+c18bf1b4a4ec: Pulling fs layer
+455c384b5bbb: Pulling fs layer
+4347acf4ed8e: Pulling fs layer
+4347acf4ed8e: Waiting
+455c384b5bbb: Waiting
+c18bf1b4a4ec: Waiting
+271a4db4b031: Waiting
+60c6aa336f7f: Verifying Checksum
+57a6bb3141f1: Verifying Checksum
+57a6bb3141f1: Download complete
+271a4db4b031: Download complete
+c18bf1b4a4ec: Verifying Checksum
+c18bf1b4a4ec: Download complete
+5ae6a0d95b1d: Download complete
+455c384b5bbb: Verifying Checksum
+455c384b5bbb: Download complete
+4347acf4ed8e: Verifying Checksum
+4347acf4ed8e: Download complete
+5ae6a0d95b1d: Pull complete
+60c6aa336f7f: Pull complete
+57a6bb3141f1: Pull complete
+271a4db4b031: Pull complete
+c18bf1b4a4ec: Pull complete
+455c384b5bbb: Pull complete
+4347acf4ed8e: Pull complete
+Digest: sha256:23215cfa044d1eb8e3b3af4359870600a170ccf1f2debc49b33def2e9dbbe143
+Status: Downloaded newer image for labtainers/labtainer.network:latest
+docker.io/labtainers/labtainer.network:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.firefox
+297061f60c36: Already exists
+e9ccef17b516: Already exists
+dbc33716854d: Already exists
+8fe36b178d25: Already exists
+686596545a94: Already exists
+2a1ec0dcc7d2: Already exists
+783e50103ffc: Already exists
+c947d8d0d841: Already exists
+079c5a491d92: Already exists
+3357f9e517ba: Already exists
+59e1fdacd7c3: Already exists
+94b49140ed6e: Already exists
+8de19312297d: Already exists
+1e9580c22968: Already exists
+f17efa04d6ff: Already exists
+be579e46efe7: Already exists
+1c60c5b04110: Already exists
+4b08a013f339: Already exists
+821285fff202: Already exists
+e0fe2c2675a4: Already exists
+4565644af95b: Already exists
+a1c654d89ff3: Already exists
+12de31e54706: Already exists
+1d57e3ee688c: Already exists
+d55e150348ef: Already exists
+1b315691f0f8: Already exists
+740d616ac234: Already exists
+5e86638feb28: Pulling fs layer
+06d08860f0dc: Pulling fs layer
+fa8a389e2b87: Pulling fs layer
+8b35ea721894: Pulling fs layer
+8b35ea721894: Waiting
+06d08860f0dc: Verifying Checksum
+06d08860f0dc: Download complete
+fa8a389e2b87: Verifying Checksum
+fa8a389e2b87: Download complete
+8b35ea721894: Verifying Checksum
+8b35ea721894: Download complete
+5e86638feb28: Verifying Checksum
+5e86638feb28: Download complete
+5e86638feb28: Pull complete
+06d08860f0dc: Pull complete
+fa8a389e2b87: Pull complete
+8b35ea721894: Pull complete
+Digest: sha256:6a8b5120640bd80c4046aedaf680ab93d60e0540c3efd7d7c1b78b220b0a83c0
+Status: Downloaded newer image for labtainers/labtainer.firefox:latest
+docker.io/labtainers/labtainer.firefox:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.wireshark
+297061f60c36: Already exists
+e9ccef17b516: Already exists
+dbc33716854d: Already exists
+8fe36b178d25: Already exists
+686596545a94: Already exists
+2a1ec0dcc7d2: Already exists
+783e50103ffc: Already exists
+c947d8d0d841: Already exists
+079c5a491d92: Already exists
+3357f9e517ba: Already exists
+59e1fdacd7c3: Already exists
+94b49140ed6e: Already exists
+8de19312297d: Already exists
+1e9580c22968: Already exists
+f17efa04d6ff: Already exists
+be579e46efe7: Already exists
+1c60c5b04110: Already exists
+4b08a013f339: Already exists
+821285fff202: Already exists
+e0fe2c2675a4: Already exists
+4565644af95b: Already exists
+a1c654d89ff3: Already exists
+12de31e54706: Already exists
+1d57e3ee688c: Already exists
+d55e150348ef: Already exists
+1b315691f0f8: Already exists
+740d616ac234: Already exists
+5ae6a0d95b1d: Already exists
+60c6aa336f7f: Already exists
+57a6bb3141f1: Already exists
+271a4db4b031: Already exists
+c18bf1b4a4ec: Already exists
+455c384b5bbb: Already exists
+4347acf4ed8e: Already exists
+491b8293a365: Pulling fs layer
+a72c8f1a303c: Pulling fs layer
+e6cbe7ecd96e: Pulling fs layer
+88c7ec137669: Pulling fs layer
+88c7ec137669: Waiting
+e6cbe7ecd96e: Verifying Checksum
+e6cbe7ecd96e: Download complete
+491b8293a365: Verifying Checksum
+491b8293a365: Download complete
+88c7ec137669: Verifying Checksum
+88c7ec137669: Download complete
+491b8293a365: Pull complete
+a72c8f1a303c: Verifying Checksum
+a72c8f1a303c: Download complete
+a72c8f1a303c: Pull complete
+e6cbe7ecd96e: Pull complete
+88c7ec137669: Pull complete
+Digest: sha256:ef3030ea96aab32f6e0ddbf24b81094e8b304047e500b027162324482bf95dc2
+Status: Downloaded newer image for labtainers/labtainer.wireshark:latest
+docker.io/labtainers/labtainer.wireshark:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.java
+297061f60c36: Already exists
+e9ccef17b516: Already exists
+dbc33716854d: Already exists
+8fe36b178d25: Already exists
+686596545a94: Already exists
+2a1ec0dcc7d2: Already exists
+783e50103ffc: Already exists
+c947d8d0d841: Already exists
+079c5a491d92: Already exists
+3357f9e517ba: Already exists
+59e1fdacd7c3: Already exists
+94b49140ed6e: Already exists
+8de19312297d: Already exists
+1e9580c22968: Already exists
+f17efa04d6ff: Already exists
+be579e46efe7: Already exists
+1c60c5b04110: Already exists
+4b08a013f339: Already exists
+821285fff202: Already exists
+e0fe2c2675a4: Already exists
+4565644af95b: Already exists
+a1c654d89ff3: Already exists
+12de31e54706: Already exists
+1d57e3ee688c: Already exists
+d55e150348ef: Already exists
+1b315691f0f8: Already exists
+740d616ac234: Already exists
+5e86638feb28: Already exists
+06d08860f0dc: Already exists
+fa8a389e2b87: Already exists
+8b35ea721894: Already exists
+f4f91c515a9e: Pulling fs layer
+f4f91c515a9e: Verifying Checksum
+f4f91c515a9e: Download complete
+f4f91c515a9e: Pull complete
+Digest: sha256:ed7e855c9f44ddb2148d0d95723eb730eb30e639c412b667d07833f69c592131
+Status: Downloaded newer image for labtainers/labtainer.java:latest
+docker.io/labtainers/labtainer.java:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.centos
+5e35d10a3eba: Pulling fs layer
+f2d000bce2c5: Pulling fs layer
+a13123d8848d: Pulling fs layer
+b8ce370e2102: Pulling fs layer
+89f353eb2fd3: Pulling fs layer
+0684dedf4a57: Pulling fs layer
+7c2811181f30: Pulling fs layer
+26989be72ab1: Pulling fs layer
+3d2819457bf1: Pulling fs layer
+facfa0f3534e: Pulling fs layer
+d32ffb67d2a1: Pulling fs layer
+3ee1f3667764: Pulling fs layer
+d7ce70033c66: Pulling fs layer
+e68a37bb1bb4: Pulling fs layer
+e42dacf81091: Pulling fs layer
+22976526d412: Pulling fs layer
+023df271a550: Pulling fs layer
+105fc20693a7: Pulling fs layer
+50c42cd91bd0: Pulling fs layer
+d32ffb67d2a1: Waiting
+facfa0f3534e: Waiting
+d7ce70033c66: Waiting
+3ee1f3667764: Waiting
+b8ce370e2102: Waiting
+023df271a550: Waiting
+e42dacf81091: Waiting
+105fc20693a7: Waiting
+50c42cd91bd0: Waiting
+22976526d412: Waiting
+89f353eb2fd3: Waiting
+3d2819457bf1: Waiting
+26989be72ab1: Waiting
+0684dedf4a57: Waiting
+7c2811181f30: Waiting
+a13123d8848d: Verifying Checksum
+a13123d8848d: Download complete
+b8ce370e2102: Verifying Checksum
+b8ce370e2102: Download complete
+89f353eb2fd3: Verifying Checksum
+89f353eb2fd3: Download complete
+f2d000bce2c5: Download complete
+0684dedf4a57: Verifying Checksum
+0684dedf4a57: Download complete
+7c2811181f30: Verifying Checksum
+7c2811181f30: Download complete
+5e35d10a3eba: Download complete
+facfa0f3534e: Verifying Checksum
+facfa0f3534e: Download complete
+d32ffb67d2a1: Download complete
+5e35d10a3eba: Pull complete
+f2d000bce2c5: Pull complete
+3ee1f3667764: Download complete
+a13123d8848d: Pull complete
+b8ce370e2102: Pull complete
+d7ce70033c66: Verifying Checksum
+d7ce70033c66: Download complete
+89f353eb2fd3: Pull complete
+e68a37bb1bb4: Verifying Checksum
+e68a37bb1bb4: Download complete
+3d2819457bf1: Verifying Checksum
+3d2819457bf1: Download complete
+0684dedf4a57: Pull complete
+e42dacf81091: Verifying Checksum
+e42dacf81091: Download complete
+22976526d412: Verifying Checksum
+22976526d412: Download complete
+7c2811181f30: Pull complete
+105fc20693a7: Download complete
+023df271a550: Verifying Checksum
+023df271a550: Download complete
+50c42cd91bd0: Verifying Checksum
+50c42cd91bd0: Download complete
+26989be72ab1: Verifying Checksum
+26989be72ab1: Download complete
+26989be72ab1: Pull complete
+3d2819457bf1: Pull complete
+facfa0f3534e: Pull complete
+d32ffb67d2a1: Pull complete
+3ee1f3667764: Pull complete
+d7ce70033c66: Pull complete
+e68a37bb1bb4: Pull complete
+e42dacf81091: Pull complete
+22976526d412: Pull complete
+023df271a550: Pull complete
+105fc20693a7: Pull complete
+50c42cd91bd0: Pull complete
+Digest: sha256:637748f2b169d1113db44dfaf74c3b775131a6d04c00eac1ac8fa6a2114319f8
+Status: Downloaded newer image for labtainers/labtainer.centos:latest
+docker.io/labtainers/labtainer.centos:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.lamp
+5e35d10a3eba: Already exists
+f2d000bce2c5: Already exists
+a13123d8848d: Already exists
+b8ce370e2102: Already exists
+89f353eb2fd3: Already exists
+0684dedf4a57: Already exists
+7c2811181f30: Already exists
+26989be72ab1: Already exists
+3d2819457bf1: Already exists
+facfa0f3534e: Already exists
+d32ffb67d2a1: Already exists
+3ee1f3667764: Already exists
+d7ce70033c66: Already exists
+e68a37bb1bb4: Already exists
+e42dacf81091: Already exists
+22976526d412: Already exists
+023df271a550: Already exists
+105fc20693a7: Already exists
+50c42cd91bd0: Already exists
+208c05fcd2a9: Pulling fs layer
+622c3f93e11c: Pulling fs layer
+21c24128fb63: Pulling fs layer
+d816e5ffa780: Pulling fs layer
+730c1d374746: Pulling fs layer
+d816e5ffa780: Waiting
+730c1d374746: Waiting
+208c05fcd2a9: Verifying Checksum
+208c05fcd2a9: Download complete
+208c05fcd2a9: Pull complete
+622c3f93e11c: Verifying Checksum
+622c3f93e11c: Download complete
+730c1d374746: Download complete
+622c3f93e11c: Pull complete
+21c24128fb63: Download complete
+21c24128fb63: Pull complete
+d816e5ffa780: Download complete
+d816e5ffa780: Pull complete
+730c1d374746: Pull complete
+Digest: sha256:896b12aafc92aad3781232133664dbc4465848e11f3d42d3c4ae22d5f7aeb103
+Status: Downloaded newer image for labtainers/labtainer.lamp:latest
+docker.io/labtainers/labtainer.lamp:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.netmon
+83ee3a23efb7: Already exists
+db98fc6f11f0: Already exists
+f611acd52c6c: Already exists
+0bdf2fee2f4a: Already exists
+d44cb421e4ec: Already exists
+b6c57caae800: Already exists
+9602728e3ff5: Already exists
+876a0dce3616: Already exists
+9ea7dcfa48d6: Already exists
+5bde864dc987: Already exists
+46d0242048fe: Already exists
+168189641dfd: Already exists
+4d87ed9c70fe: Already exists
+eb543029ad5c: Already exists
+0dae75b47d24: Already exists
+244c7e20312c: Already exists
+08a24d6a7392: Already exists
+ded374172cd9: Already exists
+3ddc6c57792f: Already exists
+a67072287074: Already exists
+fa1cec96d4b4: Already exists
+ab5de29b5e8a: Already exists
+d2fa51ac961e: Already exists
+f4f70a76ed70: Already exists
+1c4cb62e0356: Pulling fs layer
+a825ca24483f: Pulling fs layer
+3b32dfb4e7c8: Pulling fs layer
+02361bcf1708: Pulling fs layer
+11ee580a66c6: Pulling fs layer
+0ec957171ece: Pulling fs layer
+1fc344c4d1e3: Pulling fs layer
+48b5385f80c1: Pulling fs layer
+7dbfeb069557: Pulling fs layer
+94da362ab7e4: Pulling fs layer
+58f30ef2e29f: Pulling fs layer
+ac2d147e649d: Pulling fs layer
+c0870b8aeccd: Pulling fs layer
+7dbfeb069557: Waiting
+02361bcf1708: Waiting
+11ee580a66c6: Waiting
+0ec957171ece: Waiting
+48b5385f80c1: Waiting
+94da362ab7e4: Waiting
+ac2d147e649d: Waiting
+58f30ef2e29f: Waiting
+3b32dfb4e7c8: Verifying Checksum
+3b32dfb4e7c8: Download complete
+a825ca24483f: Download complete
+02361bcf1708: Download complete
+11ee580a66c6: Verifying Checksum
+11ee580a66c6: Download complete
+1c4cb62e0356: Verifying Checksum
+1c4cb62e0356: Download complete
+0ec957171ece: Download complete
+48b5385f80c1: Download complete
+7dbfeb069557: Download complete
+94da362ab7e4: Verifying Checksum
+94da362ab7e4: Download complete
+1c4cb62e0356: Pull complete
+58f30ef2e29f: Verifying Checksum
+58f30ef2e29f: Download complete
+ac2d147e649d: Download complete
+c0870b8aeccd: Verifying Checksum
+c0870b8aeccd: Download complete
+a825ca24483f: Pull complete
+3b32dfb4e7c8: Pull complete
+02361bcf1708: Pull complete
+11ee580a66c6: Pull complete
+0ec957171ece: Pull complete
+1fc344c4d1e3: Verifying Checksum
+1fc344c4d1e3: Download complete
+1fc344c4d1e3: Pull complete
+48b5385f80c1: Pull complete
+7dbfeb069557: Pull complete
+94da362ab7e4: Pull complete
+58f30ef2e29f: Pull complete
+ac2d147e649d: Pull complete
+c0870b8aeccd: Pull complete
+Digest: sha256:c7e38ec57457a8ee99a6262c2df803dcfaf246c330d3288096967f711cc04dec
+Status: Downloaded newer image for labtainers/labtainer.netmon:latest
+docker.io/labtainers/labtainer.netmon:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.tap
+297061f60c36: Already exists
+e9ccef17b516: Already exists
+dbc33716854d: Already exists
+8fe36b178d25: Already exists
+686596545a94: Already exists
+2a1ec0dcc7d2: Already exists
+783e50103ffc: Already exists
+c947d8d0d841: Already exists
+079c5a491d92: Already exists
+3357f9e517ba: Already exists
+59e1fdacd7c3: Already exists
+94b49140ed6e: Already exists
+8de19312297d: Already exists
+1e9580c22968: Already exists
+f17efa04d6ff: Already exists
+be579e46efe7: Already exists
+1c60c5b04110: Already exists
+4b08a013f339: Already exists
+821285fff202: Already exists
+e0fe2c2675a4: Already exists
+4565644af95b: Already exists
+a1c654d89ff3: Already exists
+12de31e54706: Already exists
+1d57e3ee688c: Already exists
+d55e150348ef: Already exists
+1b315691f0f8: Already exists
+740d616ac234: Already exists
+5ae6a0d95b1d: Already exists
+60c6aa336f7f: Already exists
+57a6bb3141f1: Already exists
+271a4db4b031: Already exists
+c18bf1b4a4ec: Already exists
+455c384b5bbb: Already exists
+4347acf4ed8e: Already exists
+cc2d8cae134a: Pulling fs layer
+ec742ecd2996: Pulling fs layer
+af885ef6cccf: Pulling fs layer
+690dca9e8ce2: Pulling fs layer
+c8e2dbd5dc66: Pulling fs layer
+9fc478304a3b: Pulling fs layer
+690dca9e8ce2: Waiting
+c8e2dbd5dc66: Waiting
+9fc478304a3b: Waiting
+ec742ecd2996: Download complete
+cc2d8cae134a: Verifying Checksum
+cc2d8cae134a: Download complete
+af885ef6cccf: Verifying Checksum
+af885ef6cccf: Download complete
+690dca9e8ce2: Verifying Checksum
+690dca9e8ce2: Download complete
+c8e2dbd5dc66: Download complete
+9fc478304a3b: Verifying Checksum
+9fc478304a3b: Download complete
+cc2d8cae134a: Pull complete
+ec742ecd2996: Pull complete
+af885ef6cccf: Pull complete
+690dca9e8ce2: Pull complete
+c8e2dbd5dc66: Pull complete
+9fc478304a3b: Pull complete
+Digest: sha256:ea37c69cbed0d015eb3550261083baa9974650bc30dd44a92767ad1fe4880a32
+Status: Downloaded newer image for labtainers/labtainer.tap:latest
+docker.io/labtainers/labtainer.tap:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.base2
+Digest: sha256:bfe3bd653afc98abbd742bc499825b5a7d33751cd89f79808841c79f9b4423d4
+Status: Downloaded newer image for labtainers/labtainer.base2:latest
+docker.io/labtainers/labtainer.base2:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.network2
+83ee3a23efb7: Already exists
+db98fc6f11f0: Already exists
+f611acd52c6c: Already exists
+0bdf2fee2f4a: Already exists
+d44cb421e4ec: Already exists
+b6c57caae800: Already exists
+9602728e3ff5: Already exists
+876a0dce3616: Already exists
+9ea7dcfa48d6: Already exists
+5bde864dc987: Already exists
+46d0242048fe: Already exists
+168189641dfd: Already exists
+4d87ed9c70fe: Already exists
+eb543029ad5c: Already exists
+0dae75b47d24: Already exists
+244c7e20312c: Already exists
+08a24d6a7392: Already exists
+ded374172cd9: Already exists
+3ddc6c57792f: Already exists
+a67072287074: Already exists
+fa1cec96d4b4: Already exists
+ab5de29b5e8a: Already exists
+d2fa51ac961e: Already exists
+f4f70a76ed70: Already exists
+1c4cb62e0356: Already exists
+a825ca24483f: Already exists
+3b32dfb4e7c8: Already exists
+02361bcf1708: Already exists
+11ee580a66c6: Already exists
+Digest: sha256:dce020738181ffec2ac6fbd3b5588e9c84919004d4622590604cf8a50243aae7
+Status: Downloaded newer image for labtainers/labtainer.network2:latest
+docker.io/labtainers/labtainer.network2:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.wireshark2
+83ee3a23efb7: Already exists
+db98fc6f11f0: Already exists
+f611acd52c6c: Already exists
+0bdf2fee2f4a: Already exists
+d44cb421e4ec: Already exists
+b6c57caae800: Already exists
+9602728e3ff5: Already exists
+876a0dce3616: Already exists
+9ea7dcfa48d6: Already exists
+5bde864dc987: Already exists
+46d0242048fe: Already exists
+168189641dfd: Already exists
+4d87ed9c70fe: Already exists
+eb543029ad5c: Already exists
+0dae75b47d24: Already exists
+244c7e20312c: Already exists
+08a24d6a7392: Already exists
+ded374172cd9: Already exists
+3ddc6c57792f: Already exists
+a67072287074: Already exists
+fa1cec96d4b4: Already exists
+ab5de29b5e8a: Already exists
+d2fa51ac961e: Already exists
+f4f70a76ed70: Already exists
+1c4cb62e0356: Already exists
+a825ca24483f: Already exists
+3b32dfb4e7c8: Already exists
+02361bcf1708: Already exists
+11ee580a66c6: Already exists
+0ec957171ece: Already exists
+1fc344c4d1e3: Already exists
+48b5385f80c1: Already exists
+Digest: sha256:4dfe259fb3eb8806e8ef0fa5d41e0e40bf817743bb25f92ac7864a5cbc144c53
+Status: Downloaded newer image for labtainers/labtainer.wireshark2:latest
+docker.io/labtainers/labtainer.wireshark2:latest
+Using default tag: latest
+latest: Pulling from labtainers/labtainer.network.ssh2
+83ee3a23efb7: Already exists
+db98fc6f11f0: Already exists
+f611acd52c6c: Already exists
+0bdf2fee2f4a: Already exists
+d44cb421e4ec: Already exists
+b6c57caae800: Already exists
+9602728e3ff5: Already exists
+876a0dce3616: Already exists
+9ea7dcfa48d6: Already exists
+5bde864dc987: Already exists
+46d0242048fe: Already exists
+168189641dfd: Already exists
+4d87ed9c70fe: Already exists
+eb543029ad5c: Already exists
+0dae75b47d24: Already exists
+244c7e20312c: Already exists
+08a24d6a7392: Already exists
+ded374172cd9: Already exists
+3ddc6c57792f: Already exists
+a67072287074: Already exists
+fa1cec96d4b4: Already exists
+ab5de29b5e8a: Already exists
+d2fa51ac961e: Already exists
+f4f70a76ed70: Already exists
+1c4cb62e0356: Already exists
+a825ca24483f: Already exists
+3b32dfb4e7c8: Already exists
+02361bcf1708: Already exists
+11ee580a66c6: Already exists
+25f7634c63e7: Pulling fs layer
+db19a75baf4b: Pulling fs layer
+db19a75baf4b: Verifying Checksum
+db19a75baf4b: Download complete
+25f7634c63e7: Verifying Checksum
+25f7634c63e7: Download complete
+25f7634c63e7: Pull complete
+db19a75baf4b: Pull complete
+Digest: sha256:af5e5ab4eb7279ea7930b3df13165c5362e78f82d8d0380953324b4caf8483b4
+Status: Downloaded newer image for labtainers/labtainer.network.ssh2:latest
+docker.io/labtainers/labtainer.network.ssh2:latest
+registry is: labtainers
+docker pull labtainers/labtainer.base
+docker pull labtainers/labtainer.network
+docker pull labtainers/labtainer.firefox
+docker pull labtainers/labtainer.wireshark
+docker pull labtainers/labtainer.java
+docker pull labtainers/labtainer.centos
+docker pull labtainers/labtainer.lamp
+docker pull labtainers/labtainer.netmon
+docker pull labtainers/labtainer.tap
+docker pull labtainers/labtainer.base2
+docker pull labtainers/labtainer.network2
+docker pull labtainers/labtainer.wireshark2
+docker pull labtainers/labtainer.network.ssh2

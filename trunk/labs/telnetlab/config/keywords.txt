@@ -1,4 +1,0 @@
-telnet
-passwords
-ssh
-tcpdump

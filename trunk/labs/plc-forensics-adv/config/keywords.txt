@@ -1,6 +1,0 @@
-plc
-ics
-network traffic analysis
-forensics
-wireshark
-modbus

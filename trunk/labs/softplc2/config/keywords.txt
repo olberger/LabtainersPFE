@@ -1,5 +1,0 @@
-softplc
-plc
-ics
-modbus
-ladder logic

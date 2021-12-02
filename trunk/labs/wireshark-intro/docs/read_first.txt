@@ -1,5 +1,0 @@
-The lab manual for this lab is at: 
-   file://LAB_MANUAL
-Right click on the above link to open the lab manual.
-
-

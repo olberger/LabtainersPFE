@@ -1,3 +1,0 @@
-ida
-disassembler
-reverse engineering

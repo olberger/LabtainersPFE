@@ -1,4 +1,0 @@
-routing tables
-border gateway protocol
-router
-bgp

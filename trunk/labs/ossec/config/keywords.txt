@@ -1,5 +1,0 @@
-ossec
-ids
-intrusion detection
-integrity
-logs

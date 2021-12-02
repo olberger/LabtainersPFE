@@ -1,1 +1,0 @@
-Introductory user and group management and discretionary access to files.

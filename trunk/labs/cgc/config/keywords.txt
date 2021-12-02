@@ -1,5 +1,0 @@
-vulnerability
-ida
-ghidra
-disassembler
-reverse engineering

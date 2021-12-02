@@ -1,4 +1,0 @@
-dac
-database
-sql
-policy

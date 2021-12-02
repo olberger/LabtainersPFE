@@ -1,3 +1,0 @@
-pcap lib
-network traffic analysis
-wireshark

@@ -1,1 +1,0 @@
-Control sharing of information within an SQL database per an information security policy.
