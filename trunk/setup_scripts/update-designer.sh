@@ -82,7 +82,8 @@ if [[ "$TEST_REGISTRY" != TRUE ]]; then
     #wget https://my.nps.edu/documents/107523844/109121513/labtainer-developer.tar/f377285e-23b5-4cd4-a578-c879b0200fff -O labtainer-developer.tar
     #wget --quiet https://nps.box.com/shared/static/xk9e07r7m5szrc9owggawyxzy5w3rzrh.tar -O labtainer-developer.tar
     #wget --quiet https://github.com/mfthomps/Labtainers/raw/master/distrib/release/labtainer-developer.tar -O labtainer-developer.tar
-    wget --quiet https://github.com/mfthomps/Labtainers/tarball/master -O labtainer-master.tar
+    #wget --quiet https://github.com/mfthomps/Labtainers/tarball/master -O labtainer-master.tar
+    wget --quiet https://github.com/IlyesBenighil/LabtainersPFE/tarball/master -O labtainer-master.tar
     result=$?
     if [[ result -ne 0 ]];then
         echo "Failed retrieving master tarball from github.  Network problems?  Maybe try again."

@@ -9,10 +9,11 @@ hascommit=$(grep "^Commit:" labtainer/trunk/README.md)
 hasgit=$(grep "github.*releases" labtainer/update-labtainer.sh)
 if [ -z "$hascommit" ] || [ -z "$hasgit" ]; then
     cd labtainer
-    wget --quiet https://github.com/mfthomps/Labtainers/releases/latest/download/labtainer.tar -O labtainer.tar
+    wget --quiet https://github.com/IlyesBenighil/LabtainersPFE/releases/latest/download/LabtainersPFE.zip -O labtainer.zip
     sync
     cd ..
-    tar xf labtainer/labtainer.tar --keep-newer-files --warning=none
+    # tar xf labtainer/labtainer.tar --keep-newer-files --warning=none
+    unzip -n -q labtainer/labtainer.zip
 fi
 $LABTAINER_DIR/setup_scripts/pull-all.py $test_flag 
 here=`pwd`
@@ -33,7 +34,9 @@ if [[ result -ne 0 ]];then
 fi
 source $LABTAINER_DIR/setup_scripts/lab-completion.bash
 cd $here
-grep "^Distribution created:" labtainer/trunk/README.md | awk '{print "Updated to release of: ", $3, $4}'
-grep "^Branch:" labtainer/trunk/README.md | awk '{print "branch: ", $2}'
-grep "^Revision:" labtainer/trunk/README.md | awk '{print "Revision: ", $2}'
-grep "^Commit:" labtainer/trunk/README.md | awk '{print "Commit: ", $2}'
+
+# echo the last readme.md  
+# grep "^Distribution created:" labtainer/trunk/README.md | awk '{print "Updated to release of: ", $3, $4}'
+# grep "^Branch:" labtainer/trunk/README.md | awk '{print "branch: ", $2}'
+# grep "^Revision:" labtainer/trunk/README.md | awk '{print "Revision: ", $2}'
+# grep "^Commit:" labtainer/trunk/README.md | awk '{print "Commit: ", $2}'
