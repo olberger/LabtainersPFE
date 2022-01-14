@@ -63,17 +63,17 @@ if [[ "$TEST_REGISTRY" != TRUE ]]; then
     #wget --quiet https://nps.box.com/shared/static/afz87ok8ezr0vtyo2qtlqbfmc28zk08j.tar -O labtainer.tar
     #wget --quiet https://github.com/mfthomps/Labtainers/raw/master/distrib/release/labtainer.tar -O labtainer.tar
    #  wget --quiet https://github.com/mfthomps/Labtainers/releases/latest/download/labtainer.tar -O labtainer.tar
-    wget --quiet https://github.com/IlyesBenighil/LabtainersPFE/releases/latest/download/"$1".zip -O "$1".zip
+    wget --quiet https://github.com/Ironem/LabsPFE/releases/latest/download/"$1".tgz -O "$1".tgz
     sync
 else
     cp /media/sf_SEED/test_vms/$HOSTNAME/labtainer.tar .
     echo "USING SHARED FILE TAR, NOT PULLING FROM WEB"
     test_flag="-t"
 fi
-cd ..
 
-# tar xf labtainer/labtainer.tar --keep-newer-files --warning=none
 
-unzip -n -q ./labtainer/"$1".zip -d ./labtainer/trunk/labs/
+tar xf ./"$1".tgz --keep-newer-files --warning=none -C trunk/labs
 
-rm ./labtainer/"$1".zip
+# unzip -n -q ./labtainer/"$1".zip -d ./labtainer/trunk/labs/
+
+rm ./"$1".tgz
