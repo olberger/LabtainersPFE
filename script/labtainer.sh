@@ -8,6 +8,6 @@ cd $HOME
 wget https://codeload.github.com/IlyesBenighil/LabtainersPFE/zip/refs/heads/master
 unzip master
 mv LabtainersPFE-master labtainer
-chmod 777 labtainer
+sudo chmod -R 777 labtainer
 cd labtainer
 ./install-labtainer.sh
