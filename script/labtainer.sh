@@ -4,7 +4,8 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 sudo apt -y update
 sudo apt install -y docker-ce
-
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 cd $HOME
 wget https://codeload.github.com/IlyesBenighil/LabtainersPFE/zip/refs/heads/master
