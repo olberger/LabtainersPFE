@@ -115,11 +115,9 @@ rm -f labtainer/trunk/scripts/labtainer-student/bin/SimLab*
 
 tar xf labtainer/labtainer-master.tar --strip 1 -C $LABTAINER_DIR
 rm labtainer/labtainer-master.tar
-
-if [[ "$TEST_REGISTRY" != TRUE ]]; then
-    wget --quiet https://github.com/mfthomps/Labtainers/releases/latest/download/MainUI.jar -O $LABTAINER_DIR/UI/bin/MainUI.jar
-fi
-grep "^Distribution created:" labtainer/trunk/README.md | awk '{print "Updated to release of: ", $3, $4}'
+sudo apt install -y openjdk-11-jdk-headless
+cd ../UI/bin
+sudo ./buildUI2.sh
 
 if [ ! -L $HOME/Desktop/labdesigner.pdf ]; then
        ln -s "$(pwd)"/labtainer/trunk/docs/labdesigner/labdesigner.pdf $HOME/Desktop/labdesigner.pdf
