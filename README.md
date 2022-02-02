@@ -47,7 +47,7 @@ checkwork lab-name
 ```
 To submit your work to Moodle:
 ```bash
-
+python3 ./upload_file.py
 ```
 
 ## Useful links
