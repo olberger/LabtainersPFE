@@ -586,7 +586,7 @@ def DoRebuildLab(lab_path, force_build=False, just_container=None,
         if not force_this_build and image_info is None:
             if not local_build:
                 labutils.logger.debug('Image %s exists nowhere, so force the build' % mycontainer_image_name)
-                print('Image %s exists nowhere, so force the build' % mycontainer_image_name)
+                print('Image %s exists nowhere, so force the build.\nIt may take few minutes...' % mycontainer_image_name)
             else:
                 labutils.logger.debug('Image %s does not exist locally.  Local build requested, so force the build' % mycontainer_image_name)
                 print('Image %s does not exist locally.  Local build requested, so force the build' % mycontainer_image_name)

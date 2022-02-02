@@ -30,13 +30,16 @@ POSSIBILITY OF SUCH DAMAGE.
 
 END
 #
-#  Update a labtainers installation to use the latest tar and fetch the
-#  latest baseline images
+#  Get a lab from the release
 #
 if [ "$#" -eq 1 ]; then
-    echo $1
+   labname = $1
+   version = "latest"
+elif [ "$#" -eq 2]; then
+   labname = $1
+   version = $2
 else
-   echo " usage get-lab.sh lab-name"
+   echo " usage get-lab.sh lab-name [optional version]"
    exit
 fi
 #
@@ -57,13 +60,10 @@ else
    exit
 fi
 
+echo "Try to get the lab $labname"
 
 if [[ "$TEST_REGISTRY" != TRUE ]]; then
-    #wget https://my.nps.edu/documents/107523844/109121513/labtainer.tar/6fc80410-e87d-4e47-ae24-cbb60c7619fa -O labtainer.tar
-    #wget --quiet https://nps.box.com/shared/static/afz87ok8ezr0vtyo2qtlqbfmc28zk08j.tar -O labtainer.tar
-    #wget --quiet https://github.com/mfthomps/Labtainers/raw/master/distrib/release/labtainer.tar -O labtainer.tar
-   #  wget --quiet https://github.com/mfthomps/Labtainers/releases/latest/download/labtainer.tar -O labtainer.tar
-    wget --quiet https://github.com/Ironem/LabsPFE/releases/latest/download/"$1".tgz -O "$1".tgz
+    wget --quiet https://github.com/Ironem/LabsPFE/releases/"$version"/download/"$labname".tgz -O "$labname".tgz
     sync
 else
     cp /media/sf_SEED/test_vms/$HOSTNAME/labtainer.tar .
@@ -72,8 +72,10 @@ else
 fi
 
 
-tar xf ./"$1".tgz --keep-newer-files --warning=none -C trunk/labs
+tar xf ./"$labname".tgz --keep-newer-files --warning=none -C trunk/labs
 
 # unzip -n -q ./labtainer/"$1".zip -d ./labtainer/trunk/labs/
 
-rm ./"$1".tgz
+rm ./"$labname".tgz
+
+echo "Done! The lab $labname is ready to be used"

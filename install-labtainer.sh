@@ -29,12 +29,18 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 
 END
-echo "This script will reboot the system when done, press enter to continue"
+echo "This script will reboot the system when done"
 #
 # ensure labtainer paths in .bashrc
 #
 here=`pwd`
 export LABTAINER_DIR=$here/trunk
+
+#chmod the directory
+cd ..
+chmod u+x -r $here
+cd $here
+
 target=~/.bashrc
 grep ":./bin:" $target | grep PATH >>/dev/null
 result=$?

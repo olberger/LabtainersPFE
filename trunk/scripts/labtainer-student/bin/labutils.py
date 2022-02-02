@@ -54,6 +54,7 @@ import traceback
 import string
 import errno
 import registry
+import rebuild
 
 ''' assumes relative file positions '''
 here = os.path.dirname(os.path.abspath(__file__))
@@ -1154,7 +1155,8 @@ def imageInfo(image_name, registry, base_registry, labtainer_config, is_rebuild=
                                   is_rebuild=is_rebuild, quiet=quiet, no_pull=no_pull, base_registry=base_registry)
                 if created is None and not is_rebuild:
                     if not InspectRemoteReg.reachDockerHub():
-                        logger.error('Unable to reach DockerHub.  \nIs the network functional?\n')
+                        subprocess.run(["rebuild", image_name.split('.')[0]], check=True)
+                        logger.debug('Rebuild the docker image')
             if created is not None:
                 logger.debug('%s only on registry %s, ts %s %s version %s use_tag %s' % (with_registry, registry, created, user, version, use_tag)) 
                 retval = ImageInfo(with_registry, created, user, False, False, version, use_tag)
@@ -1983,8 +1985,8 @@ def StartLab(lab_path, force_build=False, is_redo=False, quiet_start=False,
             if not image_info.local:
                 dockerPull(container_registry, mycontainer_image_name)
         else:
-            logger.error('Could not find image info for %s' % name)
-            exit(1)
+            logger.debug('Could not find image info for %s so we rebuild it from the dockerfile' % name)
+            exit(0)
 
     # Check existence of /home/$USER/$HOST_HOME_XFER directory - create if necessary
     host_xfer_dir = '%s/%s' % (myhomedir, host_home_xfer)
