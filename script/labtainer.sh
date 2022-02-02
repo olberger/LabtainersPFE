@@ -3,6 +3,8 @@ sudo apt -y install apt-transport-https ca-certificates curl software-properties
 sudo apt-get install -y docker.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
+#install curl
+sudo apt install -y curl
 
 cd $HOME
 wget https://codeload.github.com/IlyesBenighil/LabtainersPFE/zip/refs/heads/master
