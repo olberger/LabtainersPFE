@@ -117,7 +117,7 @@ rm -f labtainer/trunk/scripts/labtainer-student/bin/SimLab*
 # rm labtainer/labtainer-master.tar
 sudo apt install -y openjdk-11-jdk-headless
 cd ./labtainer/trunk/UI/bin
-sudo ./buildUI2.sh
+sudo ./buildUI2.sh -n
 
 if [ ! -L $HOME/Desktop/labdesigner.pdf ]; then
        ln -s "$(pwd)"/labtainer/trunk/docs/labdesigner/labdesigner.pdf $HOME/Desktop/labdesigner.pdf
