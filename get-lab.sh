@@ -33,11 +33,11 @@ END
 #  Get a lab from the release
 #
 if [ "$#" -eq 1 ]; then
-   labname = $1
+   labname=$1
    version = "latest"
 elif [ "$#" -eq 2]; then
-   labname = $1
-   version = $2
+   labname=$1
+   version=$2
 else
    echo " usage get-lab.sh lab-name [optional version]"
    exit
