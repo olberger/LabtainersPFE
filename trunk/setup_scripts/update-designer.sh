@@ -78,25 +78,25 @@ ln -s trunk/setup_scripts/update-designer.sh
 full=`realpath trunk/setup_scripts/update-designer.sh`
 HOSTNAME=`hostname`
 ln -sf $full trunk/scripts/labtainer-student/bin/update-designer.sh
-if [[ "$TEST_REGISTRY" != TRUE ]]; then
-    #wget https://my.nps.edu/documents/107523844/109121513/labtainer-developer.tar/f377285e-23b5-4cd4-a578-c879b0200fff -O labtainer-developer.tar
-    #wget --quiet https://nps.box.com/shared/static/xk9e07r7m5szrc9owggawyxzy5w3rzrh.tar -O labtainer-developer.tar
-    #wget --quiet https://github.com/mfthomps/Labtainers/raw/master/distrib/release/labtainer-developer.tar -O labtainer-developer.tar
-    #wget --quiet https://github.com/mfthomps/Labtainers/tarball/master -O labtainer-master.tar
-    wget --quiet https://github.com/IlyesBenighil/LabtainersPFE/tarball/master -O labtainer-master.tar
-    result=$?
-    if [[ result -ne 0 ]];then
-        echo "Failed retrieving master tarball from github.  Network problems?  Maybe try again."
-        exit
-    fi
-    sync
+# if [[ "$TEST_REGISTRY" != TRUE ]]; then
+#     #wget https://my.nps.edu/documents/107523844/109121513/labtainer-developer.tar/f377285e-23b5-4cd4-a578-c879b0200fff -O labtainer-developer.tar
+#     #wget --quiet https://nps.box.com/shared/static/xk9e07r7m5szrc9owggawyxzy5w3rzrh.tar -O labtainer-developer.tar
+#     #wget --quiet https://github.com/mfthomps/Labtainers/raw/master/distrib/release/labtainer-developer.tar -O labtainer-developer.tar
+#     #wget --quiet https://github.com/mfthomps/Labtainers/tarball/master -O labtainer-master.tar
+#     wget --quiet https://github.com/IlyesBenighil/LabtainersPFE/tarball/master -O labtainer-master.tar
+#     result=$?
+#     if [[ result -ne 0 ]];then
+#         echo "Failed retrieving master tarball from github.  Network problems?  Maybe try again."
+#         exit
+#     fi
+#     sync
 
-else
-    cp /media/sf_SEED/test_vms/$HOSTNAME/labtainer-master.tar .
-    echo "USING SHARED FILE TAR, NOT PULLING FROM WEB"
-fi
+# else
+#     cp /media/sf_SEED/test_vms/$HOSTNAME/labtainer-master.tar .
+#     echo "USING SHARED FILE TAR, NOT PULLING FROM WEB"
+# fi
 if [[ "$TEST_REGISTRY" != TRUE ]]; then
-   echo "Modifying docker DNS usage, and installing JRE provide $USER password below (password123 for Labtainers VM)"
+   echo "Modifying docker DNS usage, and installing JRE provide $USER password below (password for Labtainers VM)"
    sudo trunk/setup_scripts/dns-add.py
    sudo systemctl restart docker
    # ubuntu unattended upgrades are a curse
@@ -113,8 +113,8 @@ cd ..
 # ad-hoc clean up.  remove after a while
 rm -f labtainer/trunk/scripts/labtainer-student/bin/SimLab*
 
-tar xf labtainer/labtainer-master.tar --strip 1 -C $LABTAINER_DIR
-rm labtainer/labtainer-master.tar
+# tar xf labtainer/labtainer-master.tar --strip 1 -C $LABTAINER_DIR
+# rm labtainer/labtainer-master.tar
 sudo apt install -y openjdk-11-jdk-headless
 cd ../UI/bin
 sudo ./buildUI2.sh
