@@ -37,9 +37,9 @@ here=`pwd`
 export LABTAINER_DIR=$here/trunk
 
 #chmod the directory
-cd ..
-chmod u+x -r $here
-cd $here
+#cd ..
+#chmod u+x -r $here
+#cd $here
 
 target=~/.bashrc
 grep ":./bin:" $target | grep PATH >>/dev/null
