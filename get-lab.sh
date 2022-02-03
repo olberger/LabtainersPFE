@@ -73,7 +73,7 @@ fi
 
 
 tar xf ./"$labname".tgz --keep-newer-files --warning=none -C trunk/labs
-
+chmod -R 777 ./trunk
 # unzip -n -q ./labtainer/"$1".zip -d ./labtainer/trunk/labs/
 
 rm ./"$labname".tgz
