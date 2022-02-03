@@ -88,7 +88,7 @@ cd ..
 
 mv ./labtainer/LabtainersPFE.zip ./LabtainersPFE.zip
 
-unzip -n -u ./LabtainersPFE.zip
+unzip -q -u -o ./LabtainersPFE.zip
 
 rm ./LabtainersPFE.zip
 
