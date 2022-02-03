@@ -34,7 +34,7 @@ END
 #
 if [ "$#" -eq 1 ]; then
    labname=$1
-   version = "latest"
+   version="latest"
 elif [ "$#" -eq 2]; then
    labname=$1
    version=$2
@@ -73,7 +73,7 @@ fi
 
 
 tar xf ./"$labname".tgz --keep-newer-files --warning=none -C trunk/labs
-chmod -R 777 ./trunk
+sudo chmod -R 777 ./trunk
 # unzip -n -q ./labtainer/"$1".zip -d ./labtainer/trunk/labs/
 
 rm ./"$labname".tgz
