@@ -1,0 +1,3 @@
+[submodule "packer-ubuntu-20.04"]
+	path = packer-ubuntu-20.04
+	url = https://github.com/heizo/packer-ubuntu-20.04.git
