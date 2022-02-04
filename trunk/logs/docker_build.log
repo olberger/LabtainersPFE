@@ -1,0 +1,572 @@
+Labname is gitlab with image name gitlab
+Please wait while the lab is built
+ORIG_PWD is: /home/ilyes/labtainers/labtainer/trunk/scripts/labtainer-student
+./
+./.local/
+./.local/sys_manifest.list
+./.local/config/
+./.local/config/gitlab-home_tar.list
+./.local/config/parameter.config
+./.local/config/start.config
+./.local/result/
+./.local/bin/
+./.local/bin/fixlocal.sh
+./.local/bin/treataslocal
+docker build --build-arg lab=gitlab.gitlab.student --build-arg labdir=. --build-arg imagedir=. --build-arg user_name=ubuntu --build-arg password=ubuntu --build-arg apt_source=archive.ubuntu.com --build-arg https_proxy= --build-arg http_proxy= --build-arg HTTP_PROXY= --build-arg HTTPS_PROXY= --build-arg NO_PROXY= --build-arg no_proxy= --build-arg registry=labtainers --build-arg version=3 --pull -f Dockerfile.gitlab.gitlab.student -t gitlab.gitlab.student .
+Thu Dec  2 22:12:16 CET 2021
+Sending build context to Docker daemon  50.18kB
+Step 1/25 : ARG registry
+Step 2/25 : FROM $registry/labtainer.base2
+latest: Pulling from labtainers/labtainer.base2
+Digest: sha256:bfe3bd653afc98abbd742bc499825b5a7d33751cd89f79808841c79f9b4423d4
+Status: Image is up to date for labtainers/labtainer.base2:latest
+ ---> 739eee77f8d3
+Step 3/25 : ARG lab
+ ---> Using cache
+ ---> 4c3facb2cc96
+Step 4/25 : ARG labdir
+ ---> Using cache
+ ---> 78983ba06696
+Step 5/25 : ARG imagedir
+ ---> Using cache
+ ---> d257d20178c3
+Step 6/25 : ARG user_name
+ ---> Using cache
+ ---> 79c356da2815
+Step 7/25 : ARG password
+ ---> Using cache
+ ---> 45b9ad6c99f5
+Step 8/25 : ARG apt_source
+ ---> Using cache
+ ---> 11dfdde4ded4
+Step 9/25 : ARG version
+ ---> Using cache
+ ---> 7be753846706
+Step 10/25 : RUN apt-get update && apt-get install -y --no-install-recommends     git
+ ---> Using cache
+ ---> 9e7beda3b28e
+Step 11/25 : LABEL version=$version
+ ---> Using cache
+ ---> 6a3213c5d58b
+Step 12/25 : ENV APT_SOURCE $apt_source
+ ---> Using cache
+ ---> aeac8dcd5b10
+Step 13/25 : RUN /usr/bin/apt-source.sh
+ ---> Using cache
+ ---> a7f4b92b51a3
+Step 14/25 : ADD $labdir/$imagedir/sys_tar/sys.tar /
+ ---> Using cache
+ ---> 1062e6f05b2d
+Step 15/25 : ADD $labdir/sys_$lab.tar.gz /
+ ---> Using cache
+ ---> 147b648e5a77
+Step 16/25 : RUN useradd -ms /bin/bash $user_name
+ ---> Using cache
+ ---> 21a4f23cd9fc
+Step 17/25 : RUN echo "$user_name:$password" | chpasswd
+ ---> Using cache
+ ---> ca2d55535cab
+Step 18/25 : RUN adduser $user_name sudo
+ ---> Using cache
+ ---> 2280bfde5199
+Step 19/25 : USER $user_name
+ ---> Using cache
+ ---> 5946663ae366
+Step 20/25 : ENV HOME /home/$user_name
+ ---> Using cache
+ ---> 6a9fa0955e82
+Step 21/25 : ADD $labdir/$imagedir/home_tar/home.tar $HOME
+ ---> Using cache
+ ---> 8c70c9de8fb0
+Step 22/25 : RUN rm -f $HOME/home.tar
+ ---> Using cache
+ ---> ce47541a584a
+Step 23/25 : ADD $labdir/$lab.tar.gz $HOME
+ ---> 10205633e64c
+Step 24/25 : USER root
+ ---> Running in 4f2bac6ae853
+Removing intermediate container 4f2bac6ae853
+ ---> cb13c5222509
+Step 25/25 : CMD ["/bin/bash", "-c", "exec /sbin/init --log-target=journal 3>&1"]
+ ---> Running in ea27c56c8028
+Removing intermediate container ea27c56c8028
+ ---> f2f926592224
+Successfully built f2f926592224
+Successfully tagged gitlab.gitlab.student.tmp:latest
+Sending build context to Docker daemon  48.13kB
+Step 1/2 : FROM gitlab.gitlab.student.tmp
+ ---> f2f926592224
+Step 2/2 : RUN chown root:root /var
+ ---> Running in 0097246c2aa1
+Removing intermediate container 0097246c2aa1
+ ---> d199ae41877d
+Successfully built d199ae41877d
+Successfully tagged gitlab.gitlab.student:latest
+removing temporary Dockerfile.gitlab.gitlab.student, reference original in /home/ilyes/labtainers/labtainer/trunk/labs/gitlab/dockerfiles/Dockerfile.gitlab.gitlab.student
+Labname is gitlab with image name gitlab
+Please wait while the lab is built
+ORIG_PWD is: /home/ilyes/pfe/labtainer/labtainer-student
+./
+./.local/
+./.local/sys_manifest.list
+./.local/config/
+./.local/config/gitlab-home_tar.list
+./.local/config/parameter.config
+./.local/config/start.config
+./.local/result/
+./.local/bin/
+./.local/bin/fixlocal.sh
+./.local/bin/treataslocal
+docker build --build-arg lab=gitlab.gitlab.student --build-arg labdir=. --build-arg imagedir=. --build-arg user_name=ubuntu --build-arg password=ubuntu --build-arg apt_source=archive.ubuntu.com --build-arg https_proxy= --build-arg http_proxy= --build-arg HTTP_PROXY= --build-arg HTTPS_PROXY= --build-arg NO_PROXY= --build-arg no_proxy= --build-arg registry=labtainers --build-arg version=3 --pull -f Dockerfile.gitlab.gitlab.student -t gitlab.gitlab.student .
+Thu Dec  2 23:09:20 CET 2021
+Sending build context to Docker daemon  50.18kB
+Step 1/25 : ARG registry
+Step 2/25 : FROM $registry/labtainer.base2
+latest: Pulling from labtainers/labtainer.base2
+Digest: sha256:bfe3bd653afc98abbd742bc499825b5a7d33751cd89f79808841c79f9b4423d4
+Status: Image is up to date for labtainers/labtainer.base2:latest
+ ---> 739eee77f8d3
+Step 3/25 : ARG lab
+ ---> Using cache
+ ---> 4c3facb2cc96
+Step 4/25 : ARG labdir
+ ---> Using cache
+ ---> 78983ba06696
+Step 5/25 : ARG imagedir
+ ---> Using cache
+ ---> d257d20178c3
+Step 6/25 : ARG user_name
+ ---> Using cache
+ ---> 79c356da2815
+Step 7/25 : ARG password
+ ---> Using cache
+ ---> 45b9ad6c99f5
+Step 8/25 : ARG apt_source
+ ---> Using cache
+ ---> 11dfdde4ded4
+Step 9/25 : ARG version
+ ---> Using cache
+ ---> 7be753846706
+Step 10/25 : LABEL version=$version
+ ---> Using cache
+ ---> 7fc936f298e1
+Step 11/25 : ENV APT_SOURCE $apt_source
+ ---> Using cache
+ ---> cf560141f093
+Step 12/25 : RUN /usr/bin/apt-source.sh
+ ---> Using cache
+ ---> d172f0bd1e6f
+Step 13/25 : RUN apt-get update && apt-get install -y --no-install-recommends     git
+ ---> Using cache
+ ---> 80949afb9c17
+Step 14/25 : ADD $labdir/$imagedir/sys_tar/sys.tar /
+ ---> Using cache
+ ---> e458cfe19981
+Step 15/25 : ADD $labdir/sys_$lab.tar.gz /
+ ---> Using cache
+ ---> 29e55eeba0b9
+Step 16/25 : RUN useradd -ms /bin/bash $user_name
+ ---> Using cache
+ ---> 59f59457a7c5
+Step 17/25 : RUN echo "$user_name:$password" | chpasswd
+ ---> Using cache
+ ---> b7bc5d5bc4f5
+Step 18/25 : RUN adduser $user_name sudo
+ ---> Using cache
+ ---> 9cb0c505f159
+Step 19/25 : USER $user_name
+ ---> Using cache
+ ---> 11c096c8f832
+Step 20/25 : ENV HOME /home/$user_name
+ ---> Using cache
+ ---> 3f185aeafe7f
+Step 21/25 : ADD $labdir/$imagedir/home_tar/home.tar $HOME
+ ---> Using cache
+ ---> 194db4a5c885
+Step 22/25 : RUN rm -f $HOME/home.tar
+ ---> Using cache
+ ---> 5bee353158c7
+Step 23/25 : ADD $labdir/$lab.tar.gz $HOME
+ ---> 4e0258119476
+Step 24/25 : USER root
+ ---> Running in 36150c4dc66c
+Removing intermediate container 36150c4dc66c
+ ---> 797ff055b677
+Step 25/25 : CMD ["/bin/bash", "-c", "exec /sbin/init --log-target=journal 3>&1"]
+ ---> Running in 08c66e8fc323
+Removing intermediate container 08c66e8fc323
+ ---> 374b47ac86c7
+Successfully built 374b47ac86c7
+Successfully tagged gitlab.gitlab.student.tmp:latest
+Sending build context to Docker daemon  48.13kB
+Step 1/2 : FROM gitlab.gitlab.student.tmp
+ ---> 374b47ac86c7
+Step 2/2 : RUN chown root:root /var
+ ---> Running in a6c8295240d9
+Removing intermediate container a6c8295240d9
+ ---> af5d65006963
+Successfully built af5d65006963
+Successfully tagged gitlab.gitlab.student:latest
+removing temporary Dockerfile.gitlab.gitlab.student, reference original in /home/ilyes/pfe/labtainer/trunk/labs/gitlab/dockerfiles/Dockerfile.gitlab.gitlab.student
+Labname is gitlab with image name gitlab
+Please wait while the lab is built
+ORIG_PWD is: /home/ilyes/pfe/labtainer/labtainer-student
+./
+./.local/
+./.local/sys_manifest.list
+./.local/config/
+./.local/config/gitlab-home_tar.list
+./.local/config/parameter.config
+./.local/config/start.config
+./.local/result/
+./.local/bin/
+./.local/bin/fixlocal.sh
+./.local/bin/treataslocal
+docker build --build-arg lab=gitlab.gitlab.student --build-arg labdir=. --build-arg imagedir=. --build-arg user_name=ubuntu --build-arg password=ubuntu --build-arg apt_source=archive.ubuntu.com --build-arg https_proxy= --build-arg http_proxy= --build-arg HTTP_PROXY= --build-arg HTTPS_PROXY= --build-arg NO_PROXY= --build-arg no_proxy= --build-arg registry=labtainers --build-arg version=3 --pull -f Dockerfile.gitlab.gitlab.student -t gitlab.gitlab.student .
+Thu Dec  2 23:42:00 CET 2021
+Sending build context to Docker daemon  50.18kB
+Step 1/25 : ARG registry
+Step 2/25 : FROM $registry/labtainer.base2
+latest: Pulling from labtainers/labtainer.base2
+Digest: sha256:bfe3bd653afc98abbd742bc499825b5a7d33751cd89f79808841c79f9b4423d4
+Status: Image is up to date for labtainers/labtainer.base2:latest
+ ---> 739eee77f8d3
+Step 3/25 : ARG lab
+ ---> Using cache
+ ---> 4c3facb2cc96
+Step 4/25 : ARG labdir
+ ---> Using cache
+ ---> 78983ba06696
+Step 5/25 : ARG imagedir
+ ---> Using cache
+ ---> d257d20178c3
+Step 6/25 : ARG user_name
+ ---> Using cache
+ ---> 79c356da2815
+Step 7/25 : ARG password
+ ---> Using cache
+ ---> 45b9ad6c99f5
+Step 8/25 : ARG apt_source
+ ---> Using cache
+ ---> 11dfdde4ded4
+Step 9/25 : ARG version
+ ---> Using cache
+ ---> 7be753846706
+Step 10/25 : LABEL version=$version
+ ---> Using cache
+ ---> 7fc936f298e1
+Step 11/25 : ENV APT_SOURCE $apt_source
+ ---> Using cache
+ ---> cf560141f093
+Step 12/25 : RUN /usr/bin/apt-source.sh
+ ---> Using cache
+ ---> d172f0bd1e6f
+Step 13/25 : RUN apt-get update && apt-get install -y --no-install-recommends     git
+ ---> Using cache
+ ---> 80949afb9c17
+Step 14/25 : ADD $labdir/$imagedir/sys_tar/sys.tar /
+ ---> Using cache
+ ---> e458cfe19981
+Step 15/25 : ADD $labdir/sys_$lab.tar.gz /
+ ---> Using cache
+ ---> 29e55eeba0b9
+Step 16/25 : RUN useradd -ms /bin/bash $user_name
+ ---> Using cache
+ ---> 59f59457a7c5
+Step 17/25 : RUN echo "$user_name:$password" | chpasswd
+ ---> Using cache
+ ---> b7bc5d5bc4f5
+Step 18/25 : RUN adduser $user_name sudo
+ ---> Using cache
+ ---> 9cb0c505f159
+Step 19/25 : USER $user_name
+ ---> Using cache
+ ---> 11c096c8f832
+Step 20/25 : ENV HOME /home/$user_name
+ ---> Using cache
+ ---> 3f185aeafe7f
+Step 21/25 : ADD $labdir/$imagedir/home_tar/home.tar $HOME
+ ---> Using cache
+ ---> 194db4a5c885
+Step 22/25 : RUN rm -f $HOME/home.tar
+ ---> Using cache
+ ---> 5bee353158c7
+Step 23/25 : ADD $labdir/$lab.tar.gz $HOME
+ ---> 3436b98c0a97
+Step 24/25 : USER root
+ ---> Running in c2f14fe3cd79
+Removing intermediate container c2f14fe3cd79
+ ---> 51670745f5e3
+Step 25/25 : CMD ["/bin/bash", "-c", "exec /sbin/init --log-target=journal 3>&1"]
+ ---> Running in 9ea88cd4225f
+Removing intermediate container 9ea88cd4225f
+ ---> 257aa4e34357
+Successfully built 257aa4e34357
+Successfully tagged gitlab.gitlab.student.tmp:latest
+Sending build context to Docker daemon  48.13kB
+Step 1/2 : FROM gitlab.gitlab.student.tmp
+ ---> 257aa4e34357
+Step 2/2 : RUN chown root:root /var
+ ---> Running in 2d8794e34f3e
+Removing intermediate container 2d8794e34f3e
+ ---> 1939e4cbc0fe
+Successfully built 1939e4cbc0fe
+Successfully tagged gitlab.gitlab.student:latest
+removing temporary Dockerfile.gitlab.gitlab.student, reference original in /home/ilyes/pfe/labtainer/trunk/labs/gitlab/dockerfiles/Dockerfile.gitlab.gitlab.student
+Labname is gitlab with image name gitlab
+Please wait while the lab is built
+ORIG_PWD is: /home/ilyes/pfe/labtainer/labtainer-student
+./
+./.local/
+./.local/sys_manifest.list
+./.local/config/
+./.local/config/gitlab-home_tar.list
+./.local/config/parameter.config
+./.local/config/start.config
+./.local/result/
+./.local/bin/
+./.local/bin/fixlocal.sh
+./.local/bin/treataslocal
+docker build --build-arg lab=gitlab.gitlab.student --build-arg labdir=. --build-arg imagedir=. --build-arg user_name=ubuntu --build-arg password=ubuntu --build-arg apt_source=archive.ubuntu.com --build-arg https_proxy= --build-arg http_proxy= --build-arg HTTP_PROXY= --build-arg HTTPS_PROXY= --build-arg NO_PROXY= --build-arg no_proxy= --build-arg registry=labtainers --build-arg version=3 --pull -f Dockerfile.gitlab.gitlab.student -t gitlab.gitlab.student .
+Thu Dec  2 23:55:05 CET 2021
+Sending build context to Docker daemon  50.18kB
+Step 1/25 : ARG registry
+Step 2/25 : FROM $registry/labtainer.base
+latest: Pulling from labtainers/labtainer.base
+Digest: sha256:12d2963b092e3f322d30e11050a19108b434d0a6e1a8d9b633014fd2f0662ab0
+Status: Image is up to date for labtainers/labtainer.base:latest
+ ---> cb48e785f464
+Step 3/25 : ARG lab
+ ---> Running in 0f96b7faa9e1
+Removing intermediate container 0f96b7faa9e1
+ ---> 5ea68a82b1b6
+Step 4/25 : ARG labdir
+ ---> Running in 3ea479d2afe1
+Removing intermediate container 3ea479d2afe1
+ ---> 6aa795c81ab9
+Step 5/25 : ARG imagedir
+ ---> Running in c8bcececeba4
+Removing intermediate container c8bcececeba4
+ ---> 14bfd6dafe34
+Step 6/25 : ARG user_name
+ ---> Running in dbb8c4ed9e08
+Removing intermediate container dbb8c4ed9e08
+ ---> 4d5c3f1e5db8
+Step 7/25 : ARG password
+ ---> Running in 30e65619e04f
+Removing intermediate container 30e65619e04f
+ ---> 9ac56f3db1bf
+Step 8/25 : ARG apt_source
+ ---> Running in 52dc1609cd03
+Removing intermediate container 52dc1609cd03
+ ---> ed57f60f295c
+Step 9/25 : ARG version
+ ---> Running in 57c7c849d793
+Removing intermediate container 57c7c849d793
+ ---> f9a33f6b1d4e
+Step 10/25 : LABEL version=$version
+ ---> Running in 80df94cd1d4a
+Removing intermediate container 80df94cd1d4a
+ ---> 2de0710fe69b
+Step 11/25 : ENV APT_SOURCE $apt_source
+ ---> Running in 4054605e7acf
+Removing intermediate container 4054605e7acf
+ ---> 2daa28fd75ff
+Step 12/25 : RUN /usr/bin/apt-source.sh
+ ---> Running in 2aeb9faed930
+Removing intermediate container 2aeb9faed930
+ ---> a858b4fc2a39
+Step 13/25 : RUN apt-get update && apt-get install -y --no-install-recommends     git
+ ---> Running in a1e411a2e41d
+Get:1 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/universe Sources [9,802 kB]
+Get:6 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [256 kB]
+Get:7 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [2,051 kB]
+Get:8 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [15.9 kB]
+Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [984 kB]
+Get:10 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [8,820 B]
+Get:11 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1,558 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9,827 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe Sources [548 kB]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [2,560 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [16.4 kB]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [1,544 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [26.2 kB]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [10.9 kB]
+Get:21 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [12.7 kB]
+Fetched 30.0 MB in 5s (5,513 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  git-man libasn1-8-heimdal libcurl3-gnutls liberror-perl libgssapi3-heimdal
+  libhcrypto4-heimdal libheimbase1-heimdal libheimntlm0-heimdal
+  libhx509-5-heimdal libkrb5-26-heimdal libldap-2.4-2 libroken18-heimdal
+  librtmp1 libsasl2-2 libsasl2-modules-db libwind0-heimdal
+Suggested packages:
+  gettext-base git-daemon-run | git-daemon-sysvinit git-doc git-el git-email
+  git-gui gitk gitweb git-arch git-cvs git-mediawiki git-svn
+Recommended packages:
+  rsync libsasl2-modules
+The following NEW packages will be installed:
+  git git-man libasn1-8-heimdal libcurl3-gnutls liberror-perl
+  libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+  libheimntlm0-heimdal libhx509-5-heimdal libkrb5-26-heimdal libldap-2.4-2
+  libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules-db libwind0-heimdal
+0 upgraded, 17 newly installed, 0 to remove and 165 not upgraded.
+Need to get 5,203 kB of archives.
+After this operation, 30.0 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libroken18-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [41.4 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasn1-8-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [174 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhcrypto4-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [85.0 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimbase1-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [29.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libwind0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [47.8 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhx509-5-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [107 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5-26-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [202 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimntlm0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [15.1 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgssapi3-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [96.1 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsasl2-modules-db amd64 2.1.26.dfsg1-14ubuntu0.2 [14.5 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsasl2-2 amd64 2.1.26.dfsg1-14ubuntu0.2 [48.7 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libldap-2.4-2 amd64 2.4.42+dfsg-2ubuntu3.13 [159 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d-1ubuntu0.1 [54.4 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcurl3-gnutls amd64 7.47.0-1ubuntu2.19 [189 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial/main amd64 liberror-perl all 0.17-1.2 [19.6 kB]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 git-man all 1:2.7.4-0ubuntu1.10 [737 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 git amd64 1:2.7.4-0ubuntu1.10 [3,183 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 5,203 kB in 0s (6,767 kB/s)
+Selecting previously unselected package libroken18-heimdal:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35491 files and directories currently installed.)
+Preparing to unpack .../libroken18-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+Preparing to unpack .../libasn1-8-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+Preparing to unpack .../libhcrypto4-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+Preparing to unpack .../libheimbase1-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libwind0-heimdal:amd64.
+Preparing to unpack .../libwind0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+Preparing to unpack .../libhx509-5-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+Preparing to unpack .../libkrb5-26-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+Preparing to unpack .../libheimntlm0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+Preparing to unpack .../libgssapi3-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-14ubuntu0.2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-14ubuntu0.2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.42+dfsg-2ubuntu3.13_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.13) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20151223.gitfa8646d-1ubuntu0.1_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Preparing to unpack .../libcurl3-gnutls_7.47.0-1ubuntu2.19_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.19) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../liberror-perl_0.17-1.2_all.deb ...
+Unpacking liberror-perl (0.17-1.2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.7.4-0ubuntu1.10_all.deb ...
+Unpacking git-man (1:2.7.4-0ubuntu1.10) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.7.4-0ubuntu1.10_amd64.deb ...
+Unpacking git (1:2.7.4-0ubuntu1.10) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Setting up libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.13) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+Setting up libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.19) ...
+Setting up liberror-perl (0.17-1.2) ...
+Setting up git-man (1:2.7.4-0ubuntu1.10) ...
+Setting up git (1:2.7.4-0ubuntu1.10) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Removing intermediate container a1e411a2e41d
+ ---> 9c61c4ca26f9
+Step 14/25 : ADD $labdir/$imagedir/sys_tar/sys.tar /
+ ---> b672fd79bcf0
+Step 15/25 : ADD $labdir/sys_$lab.tar.gz /
+ ---> e183c8a8e54c
+Step 16/25 : RUN useradd -ms /bin/bash $user_name
+ ---> Running in 36d0be622414
+Removing intermediate container 36d0be622414
+ ---> 74ce05a1a1f7
+Step 17/25 : RUN echo "$user_name:$password" | chpasswd
+ ---> Running in 03416b6ad4fc
+Removing intermediate container 03416b6ad4fc
+ ---> 19bd0ee28aaa
+Step 18/25 : RUN adduser $user_name sudo
+ ---> Running in 55de8d67b338
+Adding user `ubuntu' to group `sudo' ...
+Adding user ubuntu to group sudo
+Done.
+Removing intermediate container 55de8d67b338
+ ---> 1c317770ca97
+Step 19/25 : USER $user_name
+ ---> Running in 35b8e5e60e1a
+Removing intermediate container 35b8e5e60e1a
+ ---> f8f8eaefeac4
+Step 20/25 : ENV HOME /home/$user_name
+ ---> Running in b391777d5821
+Removing intermediate container b391777d5821
+ ---> 60ebf6de14c7
+Step 21/25 : ADD $labdir/$imagedir/home_tar/home.tar $HOME
+ ---> d581f57b6d09
+Step 22/25 : RUN rm -f $HOME/home.tar
+ ---> Running in bdfdac1ad204
+Removing intermediate container bdfdac1ad204
+ ---> 08f955349c3c
+Step 23/25 : ADD $labdir/$lab.tar.gz $HOME
+ ---> 86824249c88d
+Step 24/25 : USER root
+ ---> Running in deafb880a3c4
+Removing intermediate container deafb880a3c4
+ ---> 62ec499cc6cc
+Step 25/25 : CMD ["/bin/bash", "-c", "exec /sbin/init --log-target=journal 3>&1"]
+ ---> Running in b99d08544e35
+Removing intermediate container b99d08544e35
+ ---> 189e8dfae5a6
+Successfully built 189e8dfae5a6
+Successfully tagged gitlab.gitlab.student.tmp:latest
+Sending build context to Docker daemon  48.13kB
+Step 1/2 : FROM gitlab.gitlab.student.tmp
+ ---> 189e8dfae5a6
+Step 2/2 : RUN chown root:root /var
+ ---> Running in c69fb0d20328
+Removing intermediate container c69fb0d20328
+ ---> 331f80bd2e26
+Successfully built 331f80bd2e26
+Successfully tagged gitlab.gitlab.student:latest
+removing temporary Dockerfile.gitlab.gitlab.student, reference original in /home/ilyes/pfe/labtainer/trunk/labs/gitlab/dockerfiles/Dockerfile.gitlab.gitlab.student
